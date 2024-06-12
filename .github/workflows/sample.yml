@@ -13,12 +13,8 @@ jobs:
                 node -v
                 npn -v
 
-    run-shell-commands2:
-        runs-on: ubuntu-latest
-        steps:
-            - name: string
-              run: echo "Welcome to Devops Hint"
-            - name: multiline script
-              run:
-                node -v
-                npn -v
+            - name: python command
+              run: |
+                import platform
+                print(platform.processor())
+              shell: python
