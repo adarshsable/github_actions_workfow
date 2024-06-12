@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
     run-github-actions:
-        runs-on: ubnutu-latest
+        runs-on: ubuntu-latest
         steps:
            - name: Simple Javascript 
              id: hello
