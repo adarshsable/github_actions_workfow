@@ -3,7 +3,17 @@ name: Shell Commands
 on: [push]
 
 jobs:
-    run-shell-commands:
+    run-shell-commands1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: string
+              run: echo "Welcome to Devops Hint"
+            - name: multiline script
+              run:
+                node -v
+                npn -v
+
+    run-shell-commands2:
         runs-on: ubuntu-latest
         steps:
             - name: string
