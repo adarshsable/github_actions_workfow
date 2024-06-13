@@ -28,7 +28,7 @@ jobs:
                   pwd
                   ls -a
 
-            - name: Simple Javascript 
+            - name: Simple Javascript Action
               id: hello
               uses: actions/hello-world-javascript-action@v1
               with: 
