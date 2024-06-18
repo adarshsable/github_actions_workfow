@@ -7,12 +7,12 @@ env:
 
 jobs:
     Subscribe-my-channels:
-        runs-on: unbuntu-latest
+        runs-on: ubuntu-latest
         env:
             LIKE: Please like and share
         steps:
             - name: " Please like share and sunscribe out devops hint channel"
-              run: echo"$LIKE and $SUBSCRIBE our $CHANNEL_NAME
+              run: echo "$LIKE and $SUBSCRIBE our $CHANNEL_NAME"
 
               env:
                 CHANNEL_NAME: DevOps Tutorials
