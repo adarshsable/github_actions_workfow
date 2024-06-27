@@ -8,7 +8,7 @@ jobs:
         steps: 
             - name: Testing Secrets
               run: |
-                echo '$DEVOPS'
+                echo $DEVOPS
 
               env:
                 DEVOPS: ${{ secrets.SECRETS_TOKEN }}
