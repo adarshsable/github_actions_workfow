@@ -8,10 +8,10 @@ jobs:
         steps: 
             - name: Testing Secrets
               run: |
-                if ["$DEVOPS" == "DevOpsHint"]
+                if [ "$DEVOPS" == "DevOpsHint" ]
                 then
                     echo "matched"
-
+                fi
               env:
                 DEVOPS: ${{ secrets.SECRETS_TOKEN }}
             
