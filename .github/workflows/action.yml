@@ -1,25 +1,25 @@
 name : Action Workflow  # name  of workflow
 
-on:      #
-    # schedule:
-    #     - cron: "* * * * *"
+on:
+    schedule:
+        - cron: "* * * * *"
 
-    # pull_request:
-    #     types: [closed, assigned, opened, reopened]
+    pull_request:
+        types: [closed, assigned, opened, reopened]
     
-    # push:  #events
-    #   branches:  # filters
-    #     - main
-    #     - demo/*  # if another brach starts with demo
-    #     - '!sample'
+    push:  #events
+      branches:  # filters
+        - main
+        - demo/*  # if another brach starts with demo
+        - '!sample'
       
-    #   tags:  # filters
-    #     - v1.*
+      tags:  # filters
+        - v1.*
 
-    #   path:
-    #      - '**.js'
-    #      - "**.md"
-    #      - 'docs/*'
+      path:
+         - '**.js'
+         - "**.md"
+         - 'docs/*'
 
       
       

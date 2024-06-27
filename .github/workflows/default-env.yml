@@ -6,6 +6,14 @@ jobs:
     defualt-env-variables:
         runs-on: ubuntu-latest
         steps: 
+            - name: Testing Secrets
+              run: |
+                echo '$DEVOPS'
+
+              env:
+                DEVOPS: ${{ secrets.SECRETS_TOKEN }}
+            
+
             - name: Environment Variables
               run: |
                   echo "GITHUB_ACTION: ${GITHUB_ACTION}"
